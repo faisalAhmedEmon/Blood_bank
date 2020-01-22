@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.emon.blood_bank">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+        <activity android:name=".Main_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LogIn_Activity">
+            <intent-filter>
+                <action android:name="com.example.emon.blood_bank.LogIn_Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register_Activity">
+        <intent-filter>
+            <action android:name="com.example.emon.blood_bank.Register_Activity" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+
+        </activity>
+
+        <activity android:name=".Profile_Activity">
+            <intent-filter>
+                <action android:name="com.example.emon.blood_bank.LogIn_Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Search_Activity">
+            <intent-filter>
+                <action android:name="com.example.emon.blood_bank.Search_Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShowSearchResults_Activity">
+            <intent-filter>
+                <action android:name="com.example.emon.blood_bank.ShowSearchResults_Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

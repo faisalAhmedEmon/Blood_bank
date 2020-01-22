@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="10dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/mainpage"
+
+    tools:context="com.example.emon.blood_bank.Search_Activity"
+    >
+
+    <TextView
+        android:id="@+id/slctBldGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Blood Group"
+        android:textSize="30dp"
+        android:paddingTop="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/searchBloodGroupSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+
+
+        android:entries="@array/spinnerItems"
+        android:textAlignment="center"
+        android:layout_below="@+id/slctBldGrp"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/searchLocationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Location"
+        android:textAlignment="center"
+        android:layout_below="@+id/searchBloodGroupSpinner"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/searchSubmitBtn"
+
+        android:text="Search"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/searchLocationText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        />
+
+</RelativeLayout>

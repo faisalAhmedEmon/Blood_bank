@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#a235b1"
+    tools:context="com.example.emon.blood_bank.Register_Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name   :"
+        android:textSize="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/name_"
+        android:layout_alignBaseline="@+id/name_"
+        />
+
+    <TextView
+        android:id="@+id/age_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_"
+        android:text="Age       :"
+        android:textSize="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/age_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@+id/age_"
+        android:layout_below="@id/name_txt"
+        android:layout_alignBaseline="@+id/age_"
+
+
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/sex_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age_"
+        android:text="sex        :"
+        android:textSize="20dp"
+
+
+
+        />
+    <RadioButton
+        android:id="@+id/male_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sex_"
+        android:layout_alignBaseline="@+id/sex_"
+        android:layout_below="@id/age_txt"
+        android:text="Male"
+        android:textSize="15dp"
+        />
+    <RadioButton
+        android:id="@+id/female_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:layout_toRightOf="@+id/male_"
+        android:layout_below="@+id/age_txt"
+        android:layout_alignBaseline="@+id/sex_"
+        android:textSize="15dp"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/adress_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sex_"
+        android:text="Adress  :"
+        android:textSize="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/adress_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/adress_"
+        android:layout_below="@+id/male_"
+        android:layout_alignBaseline="@id/adress_"
+        android:paddingRight="10dp"
+
+        android:layout_marginLeft="5dp"
+
+
+        />
+    <TextView
+        android:id="@+id/location_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adress_"
+        android:text="Location:"
+        android:textSize="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/location_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/location_"
+        android:layout_below="@+id/adress_txt"
+        android:layout_alignBaseline="@id/location_"
+        android:paddingStart="10dp"
+
+        android:layout_marginLeft="5dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/email_"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_"
+        android:text="Email     :"
+        android:textSize="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/email_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/email_"
+        android:layout_below="@id/location_"
+        android:layout_alignBaseline="@+id/email_"
+        android:paddingRight="10dp"
+
+
+
+        android:layout_marginLeft="5dp"
+
+
+        />
+    <TextView
+        android:id="@+id/contactNo_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_"
+        android:text="contact no:"
+        android:textSize="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/contactNo_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/contactNo_"
+        android:layout_below="@+id/email_txt"
+        android:layout_alignBaseline="@+id/contactNo_"
+        android:paddingRight="10dp"
+
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/email_txt"
+
+
+        />
+    <TextView
+        android:id="@+id/details_"
+
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/contactNo_"
+
+        android:text="Authentication Details"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/username_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:paddingStart="10dp"
+        />
+    <EditText
+        android:id="@+id/password_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_"
+        android:layout_centerHorizontal="true"
+
+        android:hint="Password"
+        android:inputType="textPassword"
+
+        />
+    <ImageView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/password_"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imgView"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:background="#faf8f9"
+
+        />
+    <Button
+        android:id="@+id/btnUploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgView"
+        android:layout_centerHorizontal="true"
+
+        android:text="Upload Image"
+        android:layout_marginTop="5dp"
+
+        />
+
+        <TextView
+            android:id="@+id/bldGrp_"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnUploadImage"
+            android:text="Blood Group  :"
+            android:textSize="25dp"/>
+        <Spinner
+            android:id="@+id/blgGrpSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bldGrp_"
+            android:layout_toRightOf="@+id/bldGrp_"
+            android:entries="@array/spinnerItems"
+            >
+
+        </Spinner>
+        <CheckBox
+            android:id="@+id/chkBox_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bldGrp_"
+            android:text="I Want To Be a Donor"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+
+            />
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chkBox_"
+            android:layout_centerHorizontal="true"
+            android:text="SAVE"
+            android:textSize="40dp"
+
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>
